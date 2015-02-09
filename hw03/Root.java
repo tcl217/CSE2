@@ -36,7 +36,7 @@ import java.util.Scanner;
                     double estimate5=(2*estimate4*estimate4*estimate4+x)/(3*estimate4*estimate4);
                         
                         //Print info
-                        System.out.print("The cube root is " +estimate5+":"+estimate5+"*"+estimate5+"*"+
+                        System.out.println("The cube root is " +estimate5+":"+estimate5+"*"+estimate5+"*"+
                         estimate5+"=" + (estimate5*estimate5*estimate5)); 
             
             

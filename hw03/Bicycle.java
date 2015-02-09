@@ -46,7 +46,7 @@ import java.util.Scanner;
                                 (nSeconds/secondsPerMinute) + " minutes.");
                                 
                                     //Average mile per hour print out
-                                    System.out.print("The average mph was " + ((int)(tripDistance/(nSeconds/secondsPerMinute/minutesPerHour)*100)/100.0));
+                                    System.out.println("The average mph was " + ((int)(tripDistance/(nSeconds/secondsPerMinute/minutesPerHour)*100)/100.0));
                                     
                             
                             
