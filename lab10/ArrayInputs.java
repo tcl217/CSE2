@@ -13,42 +13,51 @@ public class ArrayInputs{
         
         int x=myScanner.nextInt();
         
-        System.out.println("Please enter "+ x+ " positive integers:");
-        int y=myScanner.nextInt(x);
-    
-        int[] array= new int[x];
+       int[] t = checkInts(x);
+       
+        System.out.println("The array is:");
+       for(int i=0; i<t.length; i++){
+           System.out.println(t[i]);
+       }
         
-        for(y=myScanner.nextInt; y<x; ){
-            array[y]=y;
-        }
-        System.out.println("The Array is:");
-        System.out.println(y);
-        
-    
-       // int w=CheckInts(x);
-        
-        
-        
-        
+       
         
     }      
-//        public static int CheckInts(int i){
+    
+    public static int[] checkInts(int a){
+        Scanner myScanner= new Scanner(System.in);
         
-//        int a=0;    
-//        while (a<=i){
-//            int y=myScanner.next();
+        int[] array= new int[a];
         
+        System.out.println("Please enter"+a+" positive integer:");
+        
+        int y=0;
+
+            int j=0;        
+            for(j=0; j<a; j++){
+                while(!myScanner.hasNextInt()){
+                    System.out.println("Sorry, you didn't enter an int.");
+                    y=myScanner.nextInt();
+                
+                    
+                    while(y<=0){
+                        System.out.println("Sorry, the number you entered is negative.");
+                        y=myScanner.nextInt();
+                    }
+                }
+            y=myScanner.nextInt();
             
-//            while (i!=nextInt()){
-//                System.out.println("Sorry, you didn't enter an integer.");
-//               int j=myScanner.next();
-//            }
-//            while(i<0){
-//                System.out.println("Sorry, the number you entered is negative.");
-//                int j=myScanner.next();
-//            }
-//        }
-//    }
+            
+            
+                array[j]=y;
+            
+            
+        }
+        
+        
+        return array;
+    }
+
         
         
         
